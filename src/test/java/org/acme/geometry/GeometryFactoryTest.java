@@ -21,7 +21,8 @@ public class GeometryFactoryTest {
 	public static LineString createLineStringSizeN(int n){
 		List<Point> points = new ArrayList<Point>();
 		for (int i=0; i<n; i++) {
-			points.add(new Point());
+			Coordinate c = new Coordinate(i, i);
+			points.add(new Point(c));
 		}
 		return new LineString(points);
 	}

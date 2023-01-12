@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.acme.geometry.GeometryFactoryTest.createLineStringSizeN;
+import static org.acme.geometry.GeometryFactoryTest.createPointA;
 
 public class LineStringTest {
 
@@ -61,5 +62,13 @@ public class LineStringTest {
 		int n = 4;
 		LineString l = createLineStringSizeN(n);
 		Assert.assertFalse(l.isEmpty());
+	}
+
+	@Test
+	public void testFctTranslate(){
+		LineString l = createLineStringSizeN(2);
+		l.translate(1.0, 2.0);
+		Assert.assertEquals(1.0, l.getPointN(0).getCoordinate().getX(), EPSILON);
+		Assert.assertEquals(2.0, l.getPointN(0).getCoordinate().getY(), EPSILON);
 	}
 }

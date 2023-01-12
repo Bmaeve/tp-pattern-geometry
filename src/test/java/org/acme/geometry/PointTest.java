@@ -35,4 +35,12 @@ public class PointTest {
 		Point p = createPointA();
 		Assert.assertFalse(p.isEmpty());
 	}
+
+	@Test
+	public void testFctTranslate(){
+		Point p = createPointA();
+		p.translate(3.0, 2.0);
+		Assert.assertEquals(3.0, p.getCoordinate().getX(), EPSILON);
+		Assert.assertEquals(2.0, p.getCoordinate().getY(), EPSILON);
+	}
 }

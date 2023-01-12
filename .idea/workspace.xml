@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75d5ed28-4d70-42f4-8fe9-563ccb310f47" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/acme/geometry/GeometryFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/acme/geometry/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/acme/geometry/Coordinate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/acme/geometry/Geometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/acme/geometry/Geometry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/acme/geometry/LineString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/acme/geometry/LineString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/acme/geometry/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/acme/geometry/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/acme/geometry/CoordinateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/acme/geometry/CoordinateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/acme/geometry/GeometryFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/acme/geometry/GeometryFactoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/acme/geometry/LineStringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/acme/geometry/LineStringTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/acme/geometry/PointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/acme/geometry/PointTest.java" afterDir="false" />
     </list>
@@ -45,13 +45,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/formation/Documents/Java/TP/tp-pattern-geometry&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/formation/Documents/Java/TP/tp-pattern-geometry"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.acme.geometry" />
@@ -94,6 +94,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tp_pattern_geometry$All_in_tp_pattern_geometry.ic" NAME="All in tp-pattern-geometry Coverage Results" MODIFIED="1673448276803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/tp_pattern_geometry$All_in_tp_pattern_geometry__1_.ic" NAME="All in tp-pattern-geometry (1) Coverage Results" MODIFIED="1673454353513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tp_pattern_geometry$All_in_tp_pattern_geometry__1_.ic" NAME="All in tp-pattern-geometry (1) Coverage Results" MODIFIED="1673513823620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
