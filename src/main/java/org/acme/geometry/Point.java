@@ -1,18 +1,18 @@
 package org.acme.geometry;
 
 public class Point implements Geometry {
-    private Coordinate coordinate;
+    private Coordinate coordinates;
 
     public Point() {
-        this.coordinate = new Coordinate();
+        this.coordinates = new Coordinate();
     }
 
     public Point(Coordinate coord) {
-        this.coordinate = coord;
+        this.coordinates = coord;
     }
 
     public Coordinate getCoordinate() {
-        return this.coordinate;
+        return this.coordinates;
     }
 
     @Override
@@ -22,11 +22,16 @@ public class Point implements Geometry {
 
     @Override
     public boolean isEmpty() {
-        return this.coordinate.isEmpty();
+        return this.coordinates.isEmpty();
     }
 
     @Override
     public void translate(double dx, double dy) {
-        this.coordinate = new Coordinate(this.coordinate.getX() + dx, this.coordinate.getY() + dy);
+        this.coordinates = new Coordinate(this.coordinates.getX() + dx, this.coordinates.getY() + dy);
+    }
+
+    @Override
+    public Point clone() {
+        return new Point(this.coordinates);
     }
 }

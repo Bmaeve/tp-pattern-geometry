@@ -1,5 +1,6 @@
 package org.acme.geometry;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class LineString implements Geometry {
@@ -32,5 +33,14 @@ public class LineString implements Geometry {
     @Override
     public void translate(double dx, double dy) {
         this.points.forEach(p -> p.translate(dx, dy));
+    }
+
+    @Override
+    public LineString clone() {
+        List<Point> newPoints = new ArrayList<Point>();
+        for (Point p: points){
+            newPoints.add(p.clone());
+        }
+        return new LineString();
     }
 }

@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="75d5ed28-4d70-42f4-8fe9-563ccb310f47" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/acme/geometry/Coordinate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/acme/geometry/Coordinate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/acme/geometry/Geometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/acme/geometry/Geometry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/acme/geometry/LineString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/acme/geometry/LineString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/acme/geometry/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/acme/geometry/Point.java" afterDir="false" />
@@ -94,6 +93,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tp_pattern_geometry$All_in_tp_pattern_geometry.ic" NAME="All in tp-pattern-geometry Coverage Results" MODIFIED="1673448276803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/tp_pattern_geometry$All_in_tp_pattern_geometry__1_.ic" NAME="All in tp-pattern-geometry (1) Coverage Results" MODIFIED="1673513823620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/tp_pattern_geometry$All_in_tp_pattern_geometry__1_.ic" NAME="All in tp-pattern-geometry (1) Coverage Results" MODIFIED="1673515065486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
