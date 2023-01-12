@@ -42,4 +42,8 @@ public class Point implements Geometry {
         return eB.build();
     }
 
+    @Override
+    public void accept(GeometryVisitor visitor) {
+        visitor.visit(this);
+    }
 }
