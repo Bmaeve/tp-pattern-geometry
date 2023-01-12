@@ -50,4 +50,23 @@ public class GeometryWithCachedEnvelopeTest {
         Envelope e2 = g.getEnvelope();
         Assert.assertSame(e1, e2);
     }
+
+    @Test
+    public void testFctAccept() {
+        LineString l = createLineStringSizeN(0);
+        GeometryWithCachedEnvelope g = new GeometryWithCachedEnvelope(l);
+        WktVisitor v = new WktVisitor();
+        g.accept(v);
+        Assert.assertEquals("LINESTRING EMPTY", v.getResult());
+    }
+
+    @Test
+    public void testOnChange() {
+        LineString l = createLineStringSizeN(0);
+        GeometryWithCachedEnvelope g = new GeometryWithCachedEnvelope(l);
+        Envelope e1 = g.getEnvelope();
+        g.translate(2.0, 3.0);
+        Envelope e2 = g.getEnvelope();
+        Assert.assertNotEquals(e1, e2);
+    }
 }

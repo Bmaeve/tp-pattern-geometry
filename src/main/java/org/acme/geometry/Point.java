@@ -28,6 +28,7 @@ public class Point extends AbstractGeometry {
     @Override
     public void translate(double dx, double dy) {
         this.coordinates = new Coordinate(this.coordinates.getX() + dx, this.coordinates.getY() + dy);
+        this.triggerChange();
     }
 
     @Override
