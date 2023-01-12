@@ -1,8 +1,5 @@
 package org.acme.geometry;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,5 +22,20 @@ public class GeometryFactoryTest {
 			points.add(new Point(c));
 		}
 		return new LineString(points);
+	}
+
+	public static Envelope createEnvelope() {
+		Coordinate c1 = new Coordinate(1.0, 1.0);
+		Coordinate c2 = new Coordinate(2.0, 2.0);
+		Envelope envelope = new Envelope(c1, c2);
+		return envelope;
+	}
+
+	public static Envelope createEnvelopeBuilder() {
+		EnvelopeBuilder envelopeB = new EnvelopeBuilder();
+		envelopeB.insert(new Coordinate(2.4, 1.0));
+		envelopeB.insert(new Coordinate(1.0, 2.0));
+		envelopeB.insert(new Coordinate(0.0, 4.0));
+		return envelopeB.build();
 	}
 }
