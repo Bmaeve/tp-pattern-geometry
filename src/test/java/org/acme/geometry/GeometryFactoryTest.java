@@ -38,4 +38,16 @@ public class GeometryFactoryTest {
 		envelopeB.insert(new Coordinate(0.0, 4.0));
 		return envelopeB.build();
 	}
+
+	public static GeometryWithCachedEnvelope createGeometryWithCachedEnvelopePoint() {
+		Point p = createPointA();
+		GeometryWithCachedEnvelope g = new GeometryWithCachedEnvelope(p);
+		return g;
+	}
+
+	public static GeometryWithCachedEnvelope createGeometryWithCachedEnvelopeLineString() {
+		LineString l = createLineStringSizeN(4);
+		GeometryWithCachedEnvelope g = new GeometryWithCachedEnvelope(l);
+		return g;
+	}
 }

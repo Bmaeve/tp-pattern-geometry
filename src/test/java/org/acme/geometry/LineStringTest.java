@@ -52,7 +52,6 @@ public class LineStringTest {
 
 	@Test
 	public void testFctIsEmpty() {
-		int n = 0;
 		LineString l = createLineStringSizeN(0);
 		Assert.assertTrue(l.isEmpty());
 	}
