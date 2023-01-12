@@ -62,11 +62,19 @@ public class GeometryWithCachedEnvelopeTest {
 
     @Test
     public void testOnChange() {
-        LineString l = createLineStringSizeN(0);
+        LineString l = createLineStringSizeN(1);
         GeometryWithCachedEnvelope g = new GeometryWithCachedEnvelope(l);
         Envelope e1 = g.getEnvelope();
+        Assert.assertEquals(0.0, e1.getXmin(),EPSILON);
+        Assert.assertEquals(0.0, e1.getYmin(),EPSILON);
+        Assert.assertEquals(0.0, e1.getXmax(),EPSILON);
+        Assert.assertEquals(0.0, e1.getYmax(),EPSILON);
         g.translate(2.0, 3.0);
         Envelope e2 = g.getEnvelope();
-        Assert.assertNotEquals(e1, e2);
+        Assert.assertEquals(2.0,e2.getXmin(),EPSILON);
+        Assert.assertEquals(3.0, e2.getYmin(),EPSILON);
+        Assert.assertEquals(2.0, e2.getXmax(),EPSILON);
+        Assert.assertEquals(3.0, e2.getYmax(),EPSILON);
+        Assert.assertNotSame(e1, e2);
     }
 }
