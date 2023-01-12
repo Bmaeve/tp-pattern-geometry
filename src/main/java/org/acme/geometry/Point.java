@@ -34,4 +34,12 @@ public class Point implements Geometry {
     public Point clone() {
         return new Point(this.coordinates);
     }
+
+    @Override
+    public Envelope getEnvelope() {
+        EnvelopeBuilder eB = new EnvelopeBuilder();
+        eB.insert(this.getCoordinate());
+        return eB.build();
+    }
+
 }

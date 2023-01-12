@@ -74,7 +74,16 @@ public class LineStringTest {
 
 	@Test
 	public void testFctClone() {
-		LineString l1 = createLineStringSizeN(2);
-		Assert.assertNotSame(l1, l1.clone());
+		LineString l = createLineStringSizeN(2);
+		Assert.assertNotSame(l, l.clone());
+	}
+
+	@Test
+	public void testFctGetEnvelope() {
+		LineString l = createLineStringSizeN(5);
+		Assert.assertEquals(l.getPointN(0).getCoordinate().getX(), l.getEnvelope().getXmin(), EPSILON);
+		Assert.assertEquals(l.getPointN(0).getCoordinate().getY(), l.getEnvelope().getYmin(), EPSILON);
+		Assert.assertEquals(l.getPointN(4).getCoordinate().getX(), l.getEnvelope().getXmax(), EPSILON);
+		Assert.assertEquals(l.getPointN(4).getCoordinate().getY(), l.getEnvelope().getYmax(), EPSILON);
 	}
 }

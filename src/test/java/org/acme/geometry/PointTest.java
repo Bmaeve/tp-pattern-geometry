@@ -46,7 +46,16 @@ public class PointTest {
 
 	@Test
 	public void testFctClone(){
-		Point p1 = createPointA();
-		Assert.assertNotSame(p1, p1.clone());
+		Point p = createPointA();
+		Assert.assertNotSame(p, p.clone());
+	}
+
+	@Test
+	public void testFctGetEnvelope() {
+		Point p = createPointA();
+		Assert.assertEquals(p.getCoordinate().getX(), p.getEnvelope().getXmin(), EPSILON);
+		Assert.assertEquals(p.getCoordinate().getY(), p.getEnvelope().getYmin(), EPSILON);
+		Assert.assertEquals(p.getCoordinate().getX(), p.getEnvelope().getXmax(), EPSILON);
+		Assert.assertEquals(p.getCoordinate().getY(), p.getEnvelope().getYmax(), EPSILON);
 	}
 }
