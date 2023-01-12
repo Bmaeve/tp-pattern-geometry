@@ -11,7 +11,7 @@ public class WktWriter {
             } else {
                 r.append("POINT("+point.getCoordinate().getX()+" "+point.getCoordinate().getY()+")");
             }
-        } else if ( geometry instanceof LineString ) {
+        } else if (geometry instanceof LineString) {
             LineString lineString = (LineString)geometry;
             if (lineString.isEmpty()) {
                 r.append("LINESTRING EMPTY");
