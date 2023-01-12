@@ -6,7 +6,9 @@ import java.util.List;
 public class LineString implements Geometry {
     private List<Point> points;
 
-    public LineString() {}
+    public LineString() {
+        this.points = new ArrayList<>();
+    }
 
     public LineString(List<Point> p) {
         this.points = p;
